@@ -15,7 +15,7 @@ class spCLUE:
         self,
         input_data,
         graph_dict,
-        n_clusters=15,
+        n_clusters=12,
         batch_list=None,
         epochs=500,
         random_seed=0,

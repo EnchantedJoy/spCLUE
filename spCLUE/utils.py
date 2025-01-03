@@ -129,7 +129,7 @@ def calculateMetrics(true, pred, embedding):
     return metric_list
 
 def clustering(adata,
-               n_clusters=7,
+               n_clusters=12,
                radius=30,
                key="embed",
                refinement=False,
