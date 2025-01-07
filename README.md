@@ -4,11 +4,13 @@ A Contrastive Learning Approach to Unified Spatial Transcriptomics Analysis Acro
 
 ## Overview
 
+Taking a two-slice dataset as an example, spCLUE begins by constructing a multi-view graph (spatial view and expression view) for each slice. Next, it extracts spot representations through a graph contrastive learning framework, incorporating a batch prompting module, a clustering contrastive module, and an instance contrastive module. Finally, an attention module integrates the spot embeddings learned from the two contrastive modules, and the decoder reconstructs the gene expression profiles. Given the trained model, spot representations are finally extracted at the bottleneck layer, which are used to identify spatial domains.
+
 ![Overview of spCLUE](./spCLUE.png)
 
 ## Requirements
 
-We recommend you to install the following packages to run spCLUE.
+We recommend that users install the following packages to run spCLUE.
 
 - python==3.9.0
 - torch==1.13.1
@@ -26,7 +28,7 @@ We recommend you to install the following packages to run spCLUE.
 - R==4.2.0
 - mclust==6.0.0
 
-You can install spCLUE with **anaconda** by:
+You can install spCLUE with **anaconda** using the following commands:
 
 ```shell
 conda create -n spCLUE python=3.9.0
@@ -36,17 +38,17 @@ pip install -r requirements.txt
 
 ## Tutorial
 
-you can follow the tutorial provided as jupyter files to run spCLUE.
+Please find examples of spCLUE applications in the tutorial folder, where jupyter notebooks are provided.
 
-**NOTE:** the path of your dataset should be different with the tutorial. Change the path correctly to run spCLUE.
+**NOTE:** Please update the data paths before running the code.
 
 ## Datasets
 
-Here we provide links of datasets used by spCLUE.
+The example spatial transcriptomics datasets can be downloaded with the links below.
 
 - **DLPFC**: [*http://spatial.libd.org/spatialLIBD/*](http://spatial.libd.org/spatialLIBD/).
 - **BRCA**: [*https://github.com/JinmiaoChenLab/SEDR_analyses/tree/master/data*](https://github.com/JinmiaoChenLab/SEDR_analyses/tree/master/data).
 - **BARISTA**: [*http://sdmbench.drai.cn*](http://sdmbench.drai.cn).
-- **slideSeqV2_mob**: [*https://singlecell.broadinstitute.org/single_cell/study/SCP815/highly-sensitive-spatial-transcriptomics-at-near-cellular-resolution-with-slide-seqv2#study-summary*](https://singlecell.broadinstitute.org/single_cell/study/SCP815/highly-sensitive-spatial-transcriptomics-at-near-cellular-resolution-with-slide-seqv2#study-summary).
-- **stereoSeq_mob**: [*https://github.com/JinmiaoChenLab/SEDR_analyses/tree/master/data*](https://github.com/JinmiaoChenLab/SEDR_analyses/tree/master/data).
-- **stereoSeq_mosta**: [*https://db.cngb.org/stomics/mosta/*](https://db.cngb.org/stomics/mosta/).
+- **MOB1**: [*https://singlecell.broadinstitute.org/single_cell/study/SCP815/highly-sensitive-spatial-transcriptomics-at-near-cellular-resolution-with-slide-seqv2#study-summary*](https://singlecell.broadinstitute.org/single_cell/study/SCP815/highly-sensitive-spatial-transcriptomics-at-near-cellular-resolution-with-slide-seqv2#study-summary).
+- **MOB2**: [*https://github.com/JinmiaoChenLab/SEDR_analyses/tree/master/data*](https://github.com/JinmiaoChenLab/SEDR_analyses/tree/master/data).
+- **MOSTA**: [*https://db.cngb.org/stomics/mosta/*](https://db.cngb.org/stomics/mosta/).
