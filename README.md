@@ -8,7 +8,7 @@ A Contrastive Learning Approach to Unified Spatial Transcriptomics Analysis Acro
 
 ## Requirements
 
-We recommend you to install the following packages to run **spCLUE**.
+We recommend you to install the following packages to run spCLUE.
 
 - python==3.9.0
 - torch==1.13.1
@@ -26,7 +26,7 @@ We recommend you to install the following packages to run **spCLUE**.
 - R==4.2.0
 - mclust==6.0.0
 
-You can install **spCLUE** with anaconda by:
+You can install spCLUE with **anaconda** by:
 
 ```shell
 conda create -n spCLUE python=3.9.0
@@ -46,7 +46,7 @@ Here we provide links of datasets used by spCLUE.
 
 - **DLPFC**: [*http://spatial.libd.org/spatialLIBD/*](http://spatial.libd.org/spatialLIBD/).
 - **BRCA**: [*https://github.com/JinmiaoChenLab/SEDR_analyses/tree/master/data*](https://github.com/JinmiaoChenLab/SEDR_analyses/tree/master/data).
-- **BARISTA**: [*https://spacetx.github.io/data.html*](https://spacetx.github.io/data.html)
+- **BARISTA**: [*http://sdmbench.drai.cn*](http://sdmbench.drai.cn).
 - **slideSeqV2_mob**: [*https://singlecell.broadinstitute.org/single_cell/study/SCP815/highly-sensitive-spatial-transcriptomics-at-near-cellular-resolution-with-slide-seqv2#study-summary*](https://singlecell.broadinstitute.org/single_cell/study/SCP815/highly-sensitive-spatial-transcriptomics-at-near-cellular-resolution-with-slide-seqv2#study-summary).
 - **stereoSeq_mob**: [*https://github.com/JinmiaoChenLab/SEDR_analyses/tree/master/data*](https://github.com/JinmiaoChenLab/SEDR_analyses/tree/master/data).
 - **stereoSeq_mosta**: [*https://db.cngb.org/stomics/mosta/*](https://db.cngb.org/stomics/mosta/).
